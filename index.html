@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salsabilla Febyanti</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        body {
+            background-color: #e1f1ffef;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20vh);
+            visibility: hidden;
+            transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+            will-change: opacity, visibility;
+        }
+        .is-visible {
+            opacity: 1;
+            transform: none;
+            visibility: visible;
+        }
+    </style>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #85d2ffc0;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            z-index: 100;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .header nav {
+            display: flex;
+            padding-top: 9px;
+            gap: 20px;
+        }
+        .header nav a {
+            color: #00116e;
+            text-decoration: none;
+            font-size: 1em;
+            gap: 20px;
+        }
+        .header nav a:hover {
+            color: #0056b3;
+        }
+        .content {
+            margin-top: 80px;
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="logo-name">ZA</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#achievement">Achievement</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+    <div id="about" class="content fade-in-section">
+        <div class="main-container">
+            <section id="hero">
+                <div class="hero-left">
+                    <h3 class="pre-title">INTRODUCE</h3>
+                    <h1 class="hero-name"><span class="typing">Salsabilla Febyanti</span></h1>
+                    <style>
+                        .typing {
+                            display: inline-block;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            border-right: 3px solid;
+                            animation: typing 3s steps(22, end), blink-caret .75s step-end infinite;
+                        }
+                        @keyframes typing {
+                            from { width: 0 }
+                            to { width: 100% }
+                        }
+                        @keyframes blink-caret {
+                            from, to { border-color: transparent }
+                            50% { border-color: black }
+                        }
+                    </style>
+                    <br>
+                    <p>
+                        Spesialis Media Sosial dengan pengalaman lebih dari 1 tahun. Terampil dalam merancang strategi media sosial dan membuat konten menarik. Aktif berinteraksi dengan audiens untuk membangun keterlibatan dan loyalitas merek. Mampu menerjemahkan data analitik media sosial menjadi tindakan untuk pertumbuhan dan retensi audiens. Berambisi untuk mengembangkan lebih lanjut kemampuan teknis dan interpersonal dalam lingkungan kerja yang inovatif.
+                    </p>
+                </div>
+                <div class="hero-right" style="animation: smoothMove 5s infinite alternate;">
+                    <img src="salsa.png" alt="Profil Salsa" width="10">
+                </div>
+                <style>
+                    @keyframes smoothMove {
+                        0% { transform: translateX(0); }
+                        100% { transform: translateX(20px); }
+                    }
+                </style>
+            </section>
+        </div>
+    </div>
+    <div id="services" class="content fade-in-section">
+        <section id="services">
+            <div class="services main-container">
+                <h3 class="pre-title"> Services </h3>
+                <h1 class="section-title services-title">Specialized In</h1>
+    
+                <div class="grid-3">
+                    <!-- Service 1-->
+                    <div class="services">
+                        <div class="services-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.997 13.985c.01 1.104-.88 2.008-1.986 2.015-1.105.009-2.005-.88-2.011-1.984-.01-1.105.879-2.005 1.982-2.016 1.106-.007 2.009.883 2.015 1.985zm-.978-3.986c-1.104.008-2.008-.88-2.015-1.987-.009-1.103.877-2.004 1.984-2.011 1.102-.01 2.008.877 2.012 1.982.012 1.107-.88 2.006-1.981 2.016zm7.981-4.014c.004 1.102-.881 2.008-1.985 2.015-1.106.01-2.008-.879-2.015-1.983-.011-1.106.878-2.006 1.985-2.015 1.101-.006 2.005.881 2.015 1.983zm-12 15.847c4.587.38 2.944-4.492 7.188-4.537l1.838 1.534c.458 5.537-6.315 6.772-9.026 3.003zm14.065-7.115c1.427-2.239 5.846-9.748 5.846-9.748.353-.623-.429-1.273-.975-.813 0 0-6.572 5.714-8.511 7.525-1.532 1.432-1.539 2.086-2.035 4.447l1.68 1.4c2.227-.915 2.868-1.04 3.995-2.811zm-12.622 4.806c-2.084-1.82-3.42-4.479-3.443-7.447-.044-5.51 4.406-10.03 9.92-10.075 3.838-.021 6.479 1.905 6.496 3.447l1.663-1.456c-1.01-2.223-4.182-4.045-8.176-3.992-6.623.055-11.955 5.466-11.903 12.092.023 2.912 1.083 5.57 2.823 7.635.958.492 2.123.329 2.62-.204zm12.797-1.906c1.059 1.97-1.351 3.37-3.545 3.992-.304.912-.803 1.721-1.374 2.311 5.255-.591 9.061-4.304 6.266-7.889-.459.685-.897 1.197-1.347 1.586z"/></svg>
+                        </div>
+                        <h4>Desain Grafis</h4>
+                        <p>
+                            Mengeksplorasi ide-ide konten menarik dan relevan yang berfokus pada perkembangan teknologi IoT, yang berhasil menciptakan konten berkualitas tinggi dan menarik perhatian pengikut.
+                        </p>
+                    </div>
+    
+                    <!-- Service 2-->
+                    <div class="services">
+                        <div class="services-icon">
+                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M6.994 15.026v-1.833c-.004-1.295-.168-2.66 2.502-3.268 1.01-.229 2.395-.544 2.622-1.046.024-.051.095-.209-.106-.582-1.431-2.638-1.698-4.965-.754-6.552.65-1.092 1.834-1.719 3.248-1.719 1.403 0 2.579.618 3.228 1.694.943 1.568.684 3.902-.731 6.573-.198.376-.125.535-.101.587.231.502 1.571.808 2.647 1.053 2.77.631 2.416 2.236 2.451 3.279v3.958c0 .49-.201.977-.609 1.356-1.378 1.28-4.453 4.026-4.935 4.467-.749.687-1.518 1.006-2.421 1.006-.405 0-.832-.065-1.308-.2-2.773-.783-4.484-1.036-5.727-1.105v1.332h-5v-9h4.994zm-.994 1h-3v7h3v-7zm1 5.664c2.092.118 4.405.696 5.999 1.147.817.231 1.761.354 2.782-.581 1.279-1.172 2.722-2.413 4.929-4.463.824-.765-.178-1.783-1.022-1.113 0 0-2.961 2.299-3.689 2.843-.379.285-.695.519-1.148.519-.36 0-2.232-.467-3.104-.743-.575-.183-.371-.993.268-.858.447.093 1.594.35 2.201.52 1.017.281 1.276-.867.422-1.152-.562-.19-.537-.198-1.889-.665-1.301-.451-2.214-.753-3.585-.156-.639.278-1.432.616-2.164.814v3.888zm14.006-6.066v-2.422c.008-1.858-.269-1.972-1.679-2.294-1.49-.34-2.898-.66-3.334-1.611-.201-.438-.158-.933.126-1.472 1.244-2.349 1.513-4.334.757-5.59-.469-.779-1.31-1.209-2.37-1.209-1.068 0-1.916.437-2.389 1.23-.757 1.272-.482 3.248.774 5.565.291.537.338 1.032.138 1.471-.432.955-1.897 1.287-3.312 1.608-1.402.321-1.724.415-1.717 2.297v3.2l.765-.325c.642-.28 1.259-.417 1.887-.417 1.214 0 2.205.499 4.303 1.205.64.214 1.076.716 1.175 1.306 1.124-.863 2.92-2.257 2.937-2.27.357-.284.773-.434 1.2-.434.262 0 .513.058.739.162z"/></svg>
+                        </div>
+                        <h4>Spesialis Media Sosial</h4>
+                        <p>
+                            Mengimplementasikan strategi media sosial yang efektif dengan mengeksplorasi ide-ide konten yang menarik dan relevan, serta menciptakan konten berkualitas tinggi yang berhasil meningkatkan jumlah pengikut sebesar 53%.
+                        </p>
+                    </div>
+    
+                    <!-- Service 3-->
+                    <div class="services">
+                        <div class="services-icon">
+                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15 3c1.104 0 2 .896 2 2v4l7-4v14l-7-4v4c0 1.104-.896 2-2 2h-13c-1.104 0-2-.896-2-2v-14c0-1.104.896-2 2-2h13zm0 17c.552 0 1-.448 1-1v-14c0-.551-.448-1-1-1h-13c-.551 0-1 .449-1 1v14c0 .552.449 1 1 1h13zm2-9.848v3.696l6 3.429v-10.554l-6 3.429z"/></svg>
+                        </div>
+                        <h4>Videografi</h4>
+                        <p>
+                            Memiliki minat tinggi dibidang videografi dan editing video baik sinematik, maupun animasi. Dibuktikan dengan berbagai proyek video yang diselesaikan untuk keperluan konten, tugas, ataupun sekolah.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="achievement" class="content fade-in-section">
+        <div class="main-container">
+            <section id="achievement">
+                <center>
+                    <h3 class="pre-title">My Pride</h3>
+                    <h1 class="section-title">Best Achievement</h1>
+        
+                    <div class="grid-3">
+                        <div class="achievement">
+                            <table style="width: 100%; border-collapse: collapse; margin-top: 10px; margin-bottom: 10px; background-color: #85d2ffc0;">
+                                <tr>
+                                    <td style="border: 1px solid #00116e; padding: 10px;">• Juara 3 Indibiz IoT Showcase Competition, Telkom Regional Jawa Barat 2024</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #00116e; padding: 10px;">• Brand Ambassador Terbaik Beasiswa AF, Rumah Belajar Al Fath 2024</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #00116e; padding: 10px;">• Staff Kepengurusan Terbaik Divisi Media Sosial Beasiswa AF, Rumah Belajar Al Fath 2023</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #00116e; padding: 10px;">• Penerima Beasiswa AF Batch 6, Rumah Belajar Al Fath 2023</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #00116e; padding: 10px;">• Penerima Beasiswa AF Batch 5, Rumah Belajar Al Fath 2022</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #00116e; padding: 10px;">• Penerima Beasiswa AF Batch 3, Rumah Belajar Al Fath 2022</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #00116e; padding: 10px;">• Penerima Beasiswa Mentari Lazismu Periode II, Lazismu 2021</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #00116e; padding: 10px;"> • Juara 3 Lomba Desain Poster Nasional Event LENTERA SSRI, SMKN 1 Sukawati 2021</td>
+                                </tr>
+                            </table>
+                        </div>
+        </div>
+    </div>
+    <div id="contact" class="content fade-in-section">
+        <section id="contact">
+            <div class="contact main-container">
+              <div class="contact-left">
+                <form class="contact-form" action="https://formspree.io/f/xqkvqojp" method="POST">
+                  <div>
+                    <input type="text" placeholder="Name" name="name">
+                  </div>
+                  <div>
+                    <input type="email" placeholder="Email" name="email">
+                  </div>
+                  <div>
+                    <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+                  </div>
+                  <div>
+                    <button class="btn-submit">Send Message</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+    </div>
+  <footer class="fade-in-section">
+    <div class="footer-icons">
+      <a href="https://www.instagram.com/salza_febyanti">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/salsabillafebyanti">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+      </a>
+      <a href="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+    </div>
+    <p>&#169; 2024 - Made by Salsabilla Febyanti</p>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var fadeInElements = document.querySelectorAll('.fade-in-section');
+        var observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
+
+        fadeInElements.forEach(element => {
+            observer.observe(element);
+        });
+    });
+  </script>
+</body>
+</html> 
