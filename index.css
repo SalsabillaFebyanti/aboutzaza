@@ -341,8 +341,8 @@ nav ul li a {
   height: 53px;
   border-radius: 9px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-item-icon svg {
